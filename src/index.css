@@ -1,13 +1,45 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* --------------------------
+   index.css (기본 CSS)
+-------------------------- */
+
+/* Tailwind CSS 불러오기 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 전체 기본 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  background-color: #ffffff;
+  color: #1f2937; /* gray-800 */
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#h-60px {
+  height: 60px;
 }
